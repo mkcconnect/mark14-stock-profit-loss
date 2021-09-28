@@ -21,21 +21,34 @@ function calculateProfitAndLoss(initial, quantity, current) {
         //loss calculation
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss / initial) * 100;
-        console.log(`Loss is ${loss} and the percent is ${lossPercentage}%`);
-
-
+        showOutput(`Loss is ${loss} and the percent is ${lossPercentage}%`);
         
     } else if (current > initial) {
         //profit calculation
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        console.log(`Profit is ${profit} and the percent is ${profitPercentage}%`);
+        showOutput(`Profit is ${profit} and the percent is ${profitPercentage}%`);
     } else {
         //rest of the calculation
-        console.log('No pain no gain.');
+        showOutput('No pain no gain.');
     }
 }
 
-calculateProfitAndLoss(100, 10, 10);
-calculateProfitAndLoss(20, 10, 100);
-calculateProfitAndLoss(10, 10, 10);
+// calculateProfitAndLoss(100, 10, 10);
+// calculateProfitAndLoss(20, 10, 100);
+// calculateProfitAndLoss(10, 10, 10);
+
+function showOutput(message){
+    // switch (status) {
+    //     case "PROFIT":
+    //         outputBox.innerHTML = message;
+    //         break;
+    //     case "LOSS":
+    //         outputBox.innerHTML = message;
+    //         break;
+    
+    //     default:
+    //         break;
+    // }
+    outputBox.innerHTML =message;
+}
