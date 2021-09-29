@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.root {
+    --primary-color: #9D174D;
+}
+
 body{
     text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.h1 {
+    color: var(--primary-color);
+}
+
+main {
+    color: var(--primary-color);
 }
 
 label{
