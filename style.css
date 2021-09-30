@@ -7,6 +7,8 @@
 body{
     text-align: center;
     font-family: 'Anton', sans-serif;
+    background-color: darkslategray;
+    color: whitesmoke;
 }
 
 .h1 {
@@ -20,4 +22,16 @@ main {
 label{
     display: block;
     padding-bottom: 1rem;
+}
+
+a { 
+    color: inherit; 
+} 
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: whitesmoke;
 }
